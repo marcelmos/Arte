@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+  <ul class="navbar-nav mr-auto d-flex flex-row w-100 nav-justified">
+    <!-- <li class="nav-item">
+      <a href="" class="nav-link">
+        <img src="https://via.placeholder.com/150x50" alt="Logo">
+      </a>
+    </li> -->
+
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        <img src="../assets/icons/Home.svg" alt="Home">
+        <!-- Home -->
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        <img src="../assets/icons/Search.svg" alt="Search">
+        <!-- Search -->
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        <img src="../assets/icons/Notification.svg" alt="Notification">
+        <!-- Notifications -->
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        <img src="../assets/icons/Message.svg" alt="Messages" >
+        <!-- Messages -->
+      </a>
+    </li>
+
+    <!-- <li class="nav-item">
+      <a href="" class="nav-link">
+        <img src="https://via.placeholder.com/50" alt="Avatar" class="profile-avatar">
+        {{username}}
+      </a>
+    </li> -->
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <app-post></app-post>
+    </div>
+    <div class="col-md-4" style="position: relative;">
+      <div class="col-md-4 profile-data">
+        <div class="row">
+          <div class="col-4">
+            <img src="/assets/icons/Logo.svg" class="profile-avatar" alt="Profile Img">
+          </div>
+          <div class="col-8 align-middle">
+            <p class="h4">{{profileName}}</p>
+            <p class="h6 profile-tag">{{profileTag}}</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-6 text-center">
+            <img class="icons" src="/assets/icons/Watching.svg" alt="Watching">: {{profileWatchig}}
+          </div>
+          <div class="col-6 text-center">
+            <img class="icons" src="/assets/icons/Followers.svg" alt="Followers">: {{profileFollowers}}
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            <p class="h4"><img class="icons" src="/assets/icons/Hashtag.svg" alt="icon"> Trending tags:</p>
+            <ul class="tophash-list" *ngFor="let hash of topHash;">
+              <li>#{{hash}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

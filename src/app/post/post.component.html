@@ -1,0 +1,61 @@
+<ng-container *ngFor="let data of displayData">
+  <div class="row">
+    <div class="col-12 center-block">
+      <div class="liked user-data" *ngIf="liking">
+        Liked by:
+        <p class="username">{{liking}}</p>
+      </div>
+      <div class="user-data">
+        <img src="https://via.placeholder.com/50" class="user-avatar" alt="Avatar">
+        <p class="username h5">{{data.Username}}</p>
+      </div>
+      <div class="post">
+        <div class="post-img">
+          <img src="{{data.Image}}" class="mx-auto d-block"  alt="Post image load faild...">
+        </div>
+        <h4>{{data.Title}}</h4>
+        <p class="post-text">
+          {{data.PostContent}}
+        </p>
+        <p class="font-italic">{{data.Tag}}</p>
+        <div class="post-actions">
+          <ul>
+            <li>
+              <button>
+                <img class="icons" src="../assets/icons/Comments.svg" alt="Comments">
+              </button>
+              {{data.Comments}}
+            </li>
+            <li>
+              <button>
+                <img src="../assets/icons/Like.svg" alt="Likes">
+              </button>
+              {{data.Likes}}
+            </li>
+            <li>
+              <button>
+                <img class="icons" src="../assets/icons/Repost.svg" alt="Reposts">
+              </button>
+              {{data.Repost}}
+            </li>
+            <li>
+              <button>
+                <img class="icons" src="../assets/icons/Share.svg" alt="Share">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</ng-container>
+
+<div class="row" style="margin-bottom: 80px;">
+  <div class="col-12 center-block">
+    <div class="dashboard-end">
+      <img class="logo" src="./assets/icons/Logo.svg" alt="Arte Logo">
+      <p class="h5">Sorry, there start your dashboard story.</p>
+    </div>
+  </div>
+</div>

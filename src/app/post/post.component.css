@@ -1,0 +1,82 @@
+.liked {
+  overflow: hidden;
+  padding: 5px 10px;
+  width: auto;
+}
+
+.user-data {
+  background-color: rgba(102, 102, 102, 0.6);
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  border: solid 3px #8C8C8C;
+  margin-right: 10px;
+}
+
+.username {
+  display: inline;
+}
+
+.post {
+  background-color: rgba(102, 102, 102, 0.6);
+  border-radius: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.post-img>img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+  object-fit: cover;
+  align-self: center;
+  display: flex;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.post-text{
+  margin: 25px 0;
+}
+
+.post-actions ul {
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+}
+
+.post-actions button:active{
+  transform: scale(.8);
+}
+
+hr {
+  border: solid 1px rgba(102, 102, 102, 0.6);
+}
+
+.dashboard-end{
+  text-align: center;
+  background-color: rgba(102, 102, 102, 0.6);
+  border-radius: 20px;
+  justify-content: space-evenly;
+  display: flex;
+  padding: 10px;
+}
+
+.dashboard-end .logo {
+  width: 60px;
+  height: 60px;
+}
+
+.dashboard-end p{
+  margin: auto 0;
+}

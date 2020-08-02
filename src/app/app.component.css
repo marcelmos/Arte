@@ -1,0 +1,37 @@
+nav {
+  border-radius: 15px 15px 0 0;
+  -webkit-box-shadow: 0px -5px 25px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -5px 25px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px -5px 25px 0px rgba(0,0,0,0.75);
+}
+
+.nav-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.profile-avatar{
+  border-radius: 25%;
+  width: 75px;
+  height: 75px;
+  border: solid #c9c9c9 5px;
+  background-color: #696969;
+}
+
+.profile-data {
+  height: 80vh;
+  background-color: rgba(102, 102, 102, 0.6);
+  border-radius: 20px;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+}
+
+.profile-tag{
+  color: #c7c7c7;
+}
+
+.tophash-list{
+  list-style-type: none;
+}
+
