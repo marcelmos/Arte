@@ -1,0 +1,31 @@
+.profile-avatar{
+  border-radius: 25%;
+  width: 75px;
+  height: 75px;
+  border: solid #c9c9c9 3px;
+  background-color: #696969;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.profile-data {
+  height: 80vh;
+  background-color: rgba(102, 102, 102, 0.5);
+  border: solid 1px rgba(192, 192, 192, 0.5);
+  border-radius: 20px;
+  justify-content: center;
+  padding: 10px;
+  /* position: fixed; */
+}
+
+.profile-tag{
+  color: #c7c7c7;
+}
+
+.tophash-list{
+  list-style-type: none;
+}
+
+.btn-logout:hover{
+  background: rgba(148, 2, 2, 0.25);
+  color: #fff;
+}

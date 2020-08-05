@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'social-network';
-  profileName = 'Username_Here';
-  profileTag = '@UsernameTag';
-  profileWatchig = 245;
-  profileFollowers = 124;
-  topHash = ['food', 'digitalart', 'pets', 'city', 'road'];
+
 
 }

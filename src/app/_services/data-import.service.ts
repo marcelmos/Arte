@@ -12,4 +12,8 @@ export class DataImportService {
   getData() {
     return this.httpService.get('./assets/testData.json');
   }
+
+  login() {
+    return this.httpService.get('./assets/userData.json');
+  }
 }

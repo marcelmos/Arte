@@ -8,6 +8,18 @@
       <div class="user-data">
         <img src="https://via.placeholder.com/50" class="user-avatar" alt="Avatar">
         <p class="username h5">{{data.Username}}</p>
+        <!-- Post options -->
+        <div ngbDropdown class="d-inline-block post-opt">
+          <button class="dropdown-btn" id="dropdownBasic1" ngbDropdownToggle>
+            <img class="icons" src="../assets/icons/More.svg" alt="More">
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-options">
+            <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Profile.svg" alt="Profile"> Go to profile</button>
+            <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Bookmark.svg" alt="Bookmark"> Bookmark</button>
+            <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Block.svg" alt="Block"> Block</button>
+            <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Flagged.svg" alt="Report"> Report</button>
+          </div>
+        </div>
       </div>
       <div class="post">
         <div class="post-img">
@@ -28,7 +40,7 @@
             </li>
             <li>
               <button>
-                <img src="../assets/icons/Like.svg" alt="Likes">
+                <img class="icons" src="../assets/icons/Like.svg" alt="Likes">
               </button>
               {{data.Likes}}
             </li>
@@ -39,9 +51,17 @@
               {{data.Repost}}
             </li>
             <li>
-              <button>
-                <img class="icons" src="../assets/icons/Share.svg" alt="Share">
-              </button>
+              <!-- Share button -->
+              <div ngbDropdown class="d-inline-block">
+                <button class="dropdown-btn" id="dropdownBasic1" ngbDropdownToggle>
+                  <img class="icons" src="../assets/icons/Share.svg" alt="Share">
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-options">
+                  <!-- <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Logout.svg" alt="Logout"> Profile</button> -->
+                  <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/ShareLink.svg" alt="Share Link"> Share by link</button>
+                  <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Share.svg" alt="Share with"> Share post with...</button>
+                </div>
+              </div>
             </li>
           </ul>
         </div>

@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostComponent } from './post/post.component';
 import { DataImportService } from './_services/data-import.service';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserTabComponent } from './user-tab/user-tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    UserTabComponent
   ],
   imports: [
     BrowserModule,
