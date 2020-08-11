@@ -12,3 +12,6 @@ Project is making with cooperate one more person.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+You can run preview without downloading repository just use this link to open [live preview](https://arte.stackblitz.io),
+you can use this [LINK](https://stackblitz.com/edit/arte?file=src/app/app.component.ts) for live preview and code in one window.
