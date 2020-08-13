@@ -14,18 +14,17 @@
   border-radius: 20px;
   justify-content: center;
   padding: 10px;
+  z-index: 0;
   /* position: fixed; */
 }
 
-.profile-tag{
-  color: #c7c7c7;
-}
+
 
 .tophash-list{
   list-style-type: none;
 }
 
 .btn-logout:hover{
-  background: rgba(148, 2, 2, 0.25);
+  background: rgba(255, 0, 0, 0.25);
   color: #fff;
 }

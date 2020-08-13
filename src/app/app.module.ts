@@ -8,13 +8,17 @@ import { PostComponent } from './post/post.component';
 import { DataImportService } from './_services/data-import.service';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserTabComponent } from './user-tab/user-tab.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
     UserProfileComponent,
-    UserTabComponent
+    UserTabComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

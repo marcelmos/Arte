@@ -79,3 +79,7 @@ button:hover, .dropdown-btn:hover{
 .dropdown-toggle::after {
   display:none;
 }
+
+.profile-tag{
+  color: #c7c7c7;
+}

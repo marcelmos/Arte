@@ -1,36 +1,40 @@
 <div class="profile-data sticky-top">
-  <div class="row">
-    <!-- PROFILE AVATAR -->
-    <div class="col-3">
-      <img src="../assets/icons/Logo.svg" class="profile-avatar" alt="Profile Img">
-    </div>
-    <!-- PROFILE NAME AND USERTAG -->
-    <div class="col-7 align-middle">
-      <p class="h4">{{profileName}}</p>
-      <p class="h6 profile-tag">{{profileTag}}</p>
-    </div>
-    <!-- PROFILE OPTIONS BUTTON -->
-    <div ngbDropdown class="col-2 d-inline-block">
-      <button class="dropdown-btn" id="dropdownBasic1" ngbDropdownToggle>
-        <img class="icons" src="../assets/icons/More.svg" alt="More Options">
-      </button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-options">
-        <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Profile.svg" alt="Profile"> Profile</button>
-        <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Settings.svg" alt="Settings"> Edit profile</button>
-        <button ngbDropdownItem class="dropdown-item" class="btn-logout"><img class="icons" src="../assets/icons/Logout.svg" alt="Logout"> Log Out</button>
+
+  <!-- If logged show this panel -->
+  <ng-container *ngIf="isAuthorized; else loginForm">
+    <div class="row">
+      <!-- PROFILE AVATAR -->
+      <div class="col-3">
+        <img src="../assets/icons/Logo.svg" class="profile-avatar" alt="Profile Img">
+      </div>
+      <!-- PROFILE NAME AND USERTAG -->
+      <div class="col-7 align-middle">
+        <p class="h4">{{profileName}}</p>
+        <p class="h6 profile-tag">{{profileTag}}</p>
+      </div>
+      <!-- PROFILE OPTIONS BUTTON -->
+      <div ngbDropdown class="col-2 d-inline-block">
+        <button class="dropdown-btn" id="dropdownBasic1" ngbDropdownToggle>
+          <img class="icons" src="../assets/icons/More.svg" alt="More Options">
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-options">
+          <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Profile.svg" alt="Profile"> Profile</button>
+          <button ngbDropdownItem class="dropdown-item"><img class="icons" src="../assets/icons/Settings.svg" alt="Settings"> Edit profile</button>
+          <button ngbDropdownItem class="dropdown-item" class="btn-logout"><img class="icons" src="../assets/icons/Logout.svg" alt="Logout"> Log Out</button>
+        </div>
       </div>
     </div>
-  </div>
-  <hr>
-  <!-- PROFILE STATISTIC -->
-  <div class="row">
-    <div class="col-6 text-center">
-      <p class="h4"><img class="icons" src="../assets/icons/Watching.svg" alt="Watching"> {{profileWatchig}}</p>
+    <hr>
+    <!-- PROFILE STATISTIC -->
+    <div class="row">
+      <div class="col-6 text-center">
+        <p class="h4"><img class="icons" src="../assets/icons/Watching.svg" alt="Watching"> {{profileWatchig}}</p>
+      </div>
+      <div class="col-6 text-center">
+        <p class="h4"><img class="icons" src="../assets/icons/Followers.svg" alt="Followers"> {{profileFollowers}}</p>
+      </div>
     </div>
-    <div class="col-6 text-center">
-      <p class="h4"><img class="icons" src="../assets/icons/Followers.svg" alt="Followers"> {{profileFollowers}}</p>
-    </div>
-  </div>
+  </ng-container>
   <hr>
   <!-- TOP HASHTAG -->
   <div class="row">
@@ -42,3 +46,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #loginForm>
+  <app-login></app-login>
+</ng-template>
